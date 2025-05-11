@@ -1,0 +1,20 @@
+{
+  "name": "node_js_course",
+  "version": "1.0.0",
+  "description": "guefi try node js",
+  "main": "test.js",
+  "scripts": {
+    "start": "cross-env TEXT=\"1 words 3 gueefi\" node .\\lessons\\file-system.js",
+    "events": "cross-env MESSAGE=\"guefi message\" node .\\lessons\\events.js"
+  },
+  "author": "guefi",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}
