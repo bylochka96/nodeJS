@@ -5,12 +5,14 @@
   "main": "test.js",
   "scripts": {
     "start": "cross-env TEXT=\"1 words 3 gueefi\" node .\\lessons\\file-system.js",
-    "events": "cross-env MESSAGE=\"guefi message\" node .\\lessons\\events.js"
+    "events": "cross-env MESSAGE=\"guefi message\" node .\\lessons\\events.js",
+    "stream": "node .\\lessons\\stream.js",
+    "server": "nodemon .\\lessons\\index.js"
   },
   "author": "guefi",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^3.1.7"
+    "nodemon": "^3.1.10"
   },
   "dependencies": {
     "cross-env": "^7.0.3",
