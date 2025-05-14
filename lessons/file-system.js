@@ -50,7 +50,7 @@ const appendFileAsync = async (path, data) => {
 
 const readFileAsync = async (path) => {
     return new Promise((resolve, reject) => {
-        fs.readFile(path, { encoding: 'utf-8' }, (err, data) => {
+        fs.readFile(path, {encoding: 'utf-8'}, (err, data) => {
             if (err) {
                 reject(err.message)
             }

@@ -9,8 +9,8 @@ const cluster = require('cluster');
 if (cluster.isMaster) {
     for (let i = 0; i < os.cpus().length - 2; i++) {
         cluster.fork()
-    };
-    cluster.on('exit', (worker, code, signal)=>{
+    }
+    cluster.on('exit', (worker, code, signal) => {
         console.log(`Воркер с pid = ${worker.process.pid} умер `);
         cluster.fork()
     })

@@ -1,4 +1,4 @@
-const { error } = require("console");
+const {error} = require("console");
 const fs = require("fs");
 const path = require("path");
 
@@ -22,10 +22,10 @@ const path = require("path");
 // stream.on('error', (error)=>{console.log(error)})
 
 const writableStream = fs.createWriteStream(
-  path.resolve(__dirname, "test2.txt")
+    path.resolve(__dirname, "test2.txt")
 );
 
 for (let i = 0; i < 20; i++) {
-  writableStream.write(i + "\n");
+    writableStream.write(i + "\n");
 }
 writableStream.end();
