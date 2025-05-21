@@ -7,7 +7,7 @@
     "start": "cross-env TEXT=\"1 words 3 gueefi\" node .\\lessons\\file-system.js",
     "events": "cross-env MESSAGE=\"guefi message\" node .\\lessons\\events.js",
     "stream": "node .\\lessons\\stream.js",
-    "server": "nodemon .\\lessons\\index.js"
+    "server": "cross-env PORT=5005 nodemon .\\lessons\\index.js"
   },
   "author": "guefi",
   "license": "ISC",
