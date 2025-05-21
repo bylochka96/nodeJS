@@ -1,26 +1,14 @@
 const Router = require('../framework/Router');
-
-const router = new Router();
+const controller = require('./user-controller')
 
 const USERS_ENDPOINT = '/users';
 
-let users = [
-        {id: 0, name: 'Efim'},
-        {id: 1, name: ' '},
-        {id: 2, name: 'VarConstLet'},
-]
+const router = new Router();
 
-router.get(USERS_ENDPOINT, (req, res)=>{
-    res.send(users);
-})
 
-router.post(USERS_ENDPOINT, (req, res)=>{
-    console.log(req.body);
-    const user = req.body;
-    users.push(user);
-    res.send(users);
-})
+router.get(USERS_ENDPOINT, controller.getUsers)
 
+router.post(USERS_ENDPOINT, controller.createUser)
 
 
 module.exports = router;
